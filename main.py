@@ -24,9 +24,11 @@ def main():
 
         if guess_int > 10:
             print("\nYou have entered an integer that is too large!")
+            print("Answer was {0}".format(randomized_number))
 
         elif guess_int < 1:
             print("\nYou have entered an integer that is too small!")
+            print("Number was {0}".format(randomized_number))
 
         elif guess_int == randomized_number:
             print("\nYou are correct")
@@ -37,6 +39,7 @@ def main():
 
     except Exception:
         print("\nYou have not entered an integer.")
+        print("Number was {0}".format(randomized_number))
 
     finally:
         print("\nThank you for playing!")
